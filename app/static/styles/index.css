@@ -1,0 +1,7 @@
+.home-container {
+    height: min-content;
+    width: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
