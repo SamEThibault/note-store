@@ -1,0 +1,13 @@
+{% extends "coursebase.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/CMPE327.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="cmpe327-container">
+    <h1>Notes for {{ name }} </h1>
+</div>
+
+{% endblock %}
