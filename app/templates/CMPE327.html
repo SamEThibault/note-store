@@ -1,13 +1,22 @@
-{% extends "coursebase.html" %}
-
-{% block head %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/CMPE327.css') }}">
-{% endblock %}
-
-{% block content %}
+{% extends "coursebase.html" %} {% block head %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='styles/CMPE327.css') }}"
+/>
+{% endblock %} {% block content %}
 
 <div class="cmpe327-container">
-    <h1>Notes for {{ name }} </h1>
+  <h1>Notes for {{ name }}</h1>
+
+  <div id="editor"></div>
+  <textarea style="margin-bottom: 100px;" class="form-control-md w-75" id="written-notes" rows="15"></textarea>
 </div>
 
+<script type="module" src="../static/scripts/main.js"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.9.5/ace.js"
+  integrity="sha512-wju2wMXmukx2760GKQBjykvRNeRY8LdMn6XnMPJQKRF7olV229IytqfkW9Z83lrdCVA168r4Ut4paNoRxJWoag=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
 {% endblock %}
