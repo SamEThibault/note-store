@@ -9,4 +9,5 @@ def index():
 
 @app.route("/CMPE327")
 def CMPE327():
-    return render_template("CMPE327.html", title="Note Store - CMPE 327", url=os.getenv("URL"), name="CMPE 327 - Software Quality Assurance")
+    return render_template("CMPE327.html", title="Note Store - CMPE 327", 
+                            url=os.getenv("URL"), name="CMPE 327 - Software Quality Assurance")

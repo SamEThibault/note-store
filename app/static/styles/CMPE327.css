@@ -5,3 +5,10 @@
     text-align: center;
     padding-top: 50px;
 }
+
+#editor {
+    width: 900px;
+    height: 540px;
+    margin: 20px auto;
+    position: relative;
+}
