@@ -5,4 +5,5 @@ let editor = document.querySelector("#editor")
 ace.edit(editor, {
     theme: 'ace/theme/monokai',
     mode: 'ace/mode/python',
+    fontSize: "13pt"
 })

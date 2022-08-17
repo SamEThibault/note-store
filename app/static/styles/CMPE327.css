@@ -1,5 +1,5 @@
 .cmpe327-container {
-    height: 100vh;
+    height: fit-content;
     width: 100vw;
     background-color: #edd2a4;
     text-align: center;
@@ -7,8 +7,12 @@
 }
 
 #editor {
-    width: 900px;
-    height: 540px;
+    width: 75vw;
+    height: 60vh;
     margin: 20px auto;
     position: relative;
+}
+
+.written-notes {
+    align-items: center !important;
 }
